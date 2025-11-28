@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reposnive.css" />
   </head>
   <body>
     <header>
@@ -15,7 +16,7 @@
         </a>
       </div>
 
-      <div class="navigation">
+      <div class="desktop">
         <nav>
           <ul>
             <li><a href="">Home</a></li>
@@ -28,6 +29,23 @@
             <li><button>Get Started</button></li>
           </ul>
         </nav>
+      </div>
+      <div class="mobile">
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="burger">☰</label>
+
+        <div class="modal">
+          <nav>
+            <label for="nav-toggle" class="close">✕</label>
+
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">About</a></li>
+              <li><button>Contact</button></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>

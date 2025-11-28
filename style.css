@@ -1,6 +1,8 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
+
 header {
   width: 100vw;
   height: 12vh;
@@ -21,25 +23,25 @@ header .title a {
   color: black;
   text-decoration: none;
 }
-header .navigation nav ul {
+header .desktop nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-header .navigation nav ul li a {
+header .desktop nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: 100;
 }
-header .navigation nav ul li a:hover {
+header .desktop nav ul li a:hover {
   color: gray;
 }
-header .navigation nav ul li {
+header .desktop nav ul li {
   list-style: none;
 }
-header .navigation nav ul li button {
+header .desktop nav ul li button {
   padding: 10px 20px;
   border: 1px solid black;
   background-color: orange;
@@ -47,9 +49,54 @@ header .navigation nav ul li button {
   border-radius: 5px;
   cursor: pointer;
 }
-header .navigation nav ul li button:hover {
+header .desktop nav ul li button:hover {
   background-color: black;
   color: orange;
+}
+header .mobile,
+header .modal {
+  display: none;
+}
+
+header .modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #01010100;
+}
+
+header .mobile input[type="checkbox"]:checked + .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .modal nav {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .modal nav label {
+  align-self: flex-end;
+}
+
+header .modal nav .group {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+}
+
+header .modal nav ul {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
 }
 main {
   display: flex;

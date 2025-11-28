@@ -1,0 +1,265 @@
+@media (max-width: 480px) {
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 0;
+  }
+  main .communicate svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  main .what .foto {
+    gap: 20px !important;
+    flex-wrap: wrap;
+  }
+
+  main .what .foto div img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  main .communicate .content_A .speed nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .mobile .burger {
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .mobile #nav-toggle {
+    display: none;
+  }
+
+  .mobile .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+  }
+  #nav-toggle:checked ~ .modal {
+    display: flex;
+  }
+
+  .mobile .modal nav {
+    background: white;
+    width: 80%;
+    padding: 40px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: slideDown 0.3s ease;
+  }
+
+  .mobile .modal .close {
+    font-size: 28px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .mobile .modal ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mobile .modal ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+  }
+
+  .mobile .modal ul li button {
+    padding: 12px 20px;
+    background: orange;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  main .communicate {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  main .communicate .content_A h1 {
+    font-size: 30px;
+  }
+
+  main .communicate svg {
+    width: 220px;
+    height: 220px;
+  }
+
+  main .what .we {
+    margin-left: 20px !important;
+  }
+
+  main .what .foto {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  main .With {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  main .built {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  main .leader .leader-logo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .leader .leader-content {
+    margin-left: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    gap: 60px;
+  }
+  main .With,
+  main .communicate,
+  main .what,
+  main .built,
+  main .leader {
+    height: auto !important;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    font-size: 28px;
+  }
+
+  main .what .foto div img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+  main .what .we {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  main .built {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .built .content {
+    align-items: center;
+  }
+
+  main .communicate {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  main .communicate svg {
+    width: 320px;
+    height: 320px;
+  }
+
+  main .what .we {
+    margin-left: 40px;
+  }
+
+  main .what .foto {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main .leader .leader-logo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    gap: 120px;
+  }
+
+  header .desktop nav ul li {
+    margin-right: 10px;
+  }
+
+  main .communicate svg {
+    width: 420px;
+    height: 420px;
+  }
+
+  main .what .we {
+    margin-left: 80px;
+  }
+
+  header {
+    gap: 40px !important;
+  }
+}
